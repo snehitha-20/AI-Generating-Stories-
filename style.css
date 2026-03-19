@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: url("https://www.inspireculture.org.uk/uploads/images/Cropped_image_elEROiD.max-400x400_UCPSwPW.png")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* BOOK COVER */
+.book-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.book {
+  background: #fbe1b9;
+  color: #000;
+  padding: 40px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+/* APP */
+#app-content {
+  display: none;
+  background: rgba(253, 217, 247, 0.95);
+  color: #000;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* BUTTONS */
+button {
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: none;
+  background: #f7f4f0;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: all 0.25s ease;
+}
+
+button:hover:enabled {
+  background: #e7c175;
+}
+
+#playPauseBtn:hover:enabled {
+  background: #4caf50;
+  color: #fff;
+}
+#downloadBtn:hover:enabled {
+  background: #28f321;
+  color: #fff;
+}
+#stopBtn:hover:enabled {
+  background: #e53935;
+  color: #fff;
+}
+button:disabled {
+  background: #cbd5e0;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* STORY */
+#story {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.word {
+  margin-right: 3px;
+}
+
+.word.difficult {
+  cursor: pointer;
+  border-bottom: 1px dotted #333;
+}
+
+/* POPUP */
+.popup {
+  position: absolute;
+  background: #fff;
+  color: #000;
+  border: 1px solid #aaa;
+  padding: 12px;
+  border-radius: 8px;
+  display: none;
+  max-width: 300px;
+  z-index: 1000;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}

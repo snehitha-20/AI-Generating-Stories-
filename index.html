@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Khathakar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BOOK COVER -->
+  <div class="book-cover" id="bookCover">
+    <div class="book" onclick="openBook()">
+      <h2>The Khathakar</h2>
+      <p>Let’s begin the story 📖</p>
+    </div>
+  </div>
+
+  <!-- APP CONTENT -->
+  <div id="app-content">
+    <h1>The Khathakar</h1>
+
+    <input type="text" id="prompt" placeholder="Enter a story idea..." size="50" />
+    <button onclick="generateStory()">Tell Story</button>
+
+    <br><br>
+
+    <button id="playPauseBtn" onclick="togglePlayPause()" disabled>▶ Play</button>
+    <button id="restartBtn" onclick="restartStory()" disabled>🔁 Restart</button>
+    <button id="stopBtn" onclick="stopStory()" disabled>⏹ Stop</button>
+    <button id="downloadBtn" onclick="downloadStory()" disabled>⬇ Download</button>
+
+    <br><br>
+
+    Speed:
+    <input type="range" min="0.5" max="2" step="0.1" value="1" id="rateSlider">
+    <span id="rateValue">1x</span>
+
+    <div id="story"></div>
+  </div>
+
+  <!-- DICTIONARY POPUP -->
+  <div id="definitionTooltip" class="popup"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
